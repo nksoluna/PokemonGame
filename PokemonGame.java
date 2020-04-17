@@ -1,25 +1,24 @@
-import java.util.Scanner;
-import java.io.*;
+import java.util.*;
+import java.util.ArrayList;
 
-public class PokemonGame {
 
-    public static void main (String arg[] {
+public  class PokemonGame {
+
+    public static void main (String arg[]) {
         System.out.println("Welcome to The Pokemon Game !!") ;
-        System.out.println("Game Started !!") ;
-        Pokemon Zacian = new Pokemon("Zacian") ;
-        while (true) {
-            system.out.println(Zacian.getStats());
-            Zacian.exp(300);
-            wait (20000) ;
-        }
-}
+        Arraylist<Pokemon> bag = new ArrayList<Pokemon>() ;
 
-private static void wait(int miliseconds)
-    {
-        try {
-            Thread.sleep(miliseconds);
+        Pokemon Lapras = new Lapras("Laprasgod") ;
+        Pokemon Snorlax = new Snorlax("My Snorlax") ;
+        Pokemon Snorlax2 = new Snorlax("Snorlax") ;
+
+        bag.add(Lapras);
+        bag.add(Snorlax);
+        bag.add(Snorlax2);
+
+        for(Pokemon p : bag) {
+            System.out.println(p) ;
         }
-        catch (Exception e) { }
+
     }
-
 }
