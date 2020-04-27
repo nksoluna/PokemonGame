@@ -1,16 +1,14 @@
-import java.util.*;
-import java.util.ArrayList;
 
+public class PokemonGame   {
 
-public class PokemonGame {
-
-    public static void main (String arg[]) {
-        System.out.println("Welcome to The Pokemon Game !!") ;
+    public static void main(String[] args) {
+        System.out.println("Start Pokemon Game!");
+        new SelectTrainer();
         
 
-        Trainer t = new Trainer();
-        t.play() ;
-        System.out.println("End Pokemon Game") ; 
-        
+       
+        System.out.println("\n\nEnd Pokemon Game!");
+
     }
-}
+
+}  
