@@ -57,8 +57,8 @@ public class MyPokemon extends JFrame  {
         JButton btn = new JButton("SELECT");
 
         for(int i = 0 ; i < bag.size() ; ++i ){
-            radio2.add(new JLabel(""+ i + " " + bag.get(i),false));
-            group2.add(new JLabel(""+ i + " " + bag.get(i),false));
+            radio2.add(new JRadioButton(""+ i + " " + bag.get(i),false));
+            group2.add(new JRadioButton(""+ i + " " + bag.get(i),false));
             
         }
  
